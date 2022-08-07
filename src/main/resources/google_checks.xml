@@ -31,6 +31,7 @@
   </module>
   <!-- https://checkstyle.org/config_filters.html#SuppressionFilter -->
   <module name="SuppressionFilter">
+    <!-- NOTE: For Gradle use ${config_loc}/checkstyle-suppressions.xml -->
     <property name="file" value="${org.checkstyle.google.suppressionfilter.config}"
            default="checkstyle-suppressions.xml" />
     <property name="optional" value="true"/>
@@ -361,6 +362,7 @@
     </module>
     <!-- https://checkstyle.org/config_filters.html#SuppressionXpathFilter -->
     <module name="SuppressionXpathFilter">
+      <!-- NOTE: For Gradle use ${config_loc}/checkstyle-xpath-suppressions.xml -->
       <property name="file" value="${org.checkstyle.google.suppressionxpathfilter.config}"
              default="checkstyle-xpath-suppressions.xml" />
       <property name="optional" value="true"/>
